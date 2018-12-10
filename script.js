@@ -1,3 +1,8 @@
+function myRefresh() {
+  location.reload(true);
+}
+
+
 function myFunction(){
   let n = document.getElementById('numb').value;
   let text;
