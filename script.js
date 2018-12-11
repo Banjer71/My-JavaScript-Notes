@@ -4,19 +4,15 @@ function myRefresh() {
 
 
 function myFunction(){
-  let n = document.getElementById('numb').value;
-  let text;
-  let arr = [];
-  for (let i = 0; i < 5; i++){
-    if (n % 1 === 0 && n > 0) {
-    text = "this is your array " + createArr(n);
-       } else {
-       n = prompt("It is not a valid number, try again, please");
-       text = "End of the Game, refresh the page, if you want to play again ";
-       } 
-       document.getElementById("display-array").innerHTML = text;
-      }
-  }
+let n = document.getElementById('numb').value;
+let text;
+  while ((n % 1 === 0 && n > 0) === false) {
+    n = prompt("It is not a valid number, try again, please");
+    }
+    text = "this is your array " + createArr(n); 
+    document.getElementById("display-array").innerHTML = text;
+}
+  
 
 
   function createArr(n){
